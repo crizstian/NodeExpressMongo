@@ -20,3 +20,8 @@ sudo chown $USER /data/db
 ### Run MongoDB!
 iTerm buffer 1: `mongod`  
 iTerm buffer 2: `mongo`
+
+### Run the Proyect
+- start mongo
+- `npm install` to install the dependencies
+- `nodemon client.js` to run the code 
