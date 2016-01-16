@@ -21,7 +21,12 @@ sudo chown $USER /data/db
 iTerm buffer 1: `mongod`  
 iTerm buffer 2: `mongo`
 
+### Code proyect
+the proyect is build using MongoDb as the database, the Restful API is build using Restify a nodejs package,
+built on top of express an as you know, express is built on top of NodeJS, but why Restify, beacuse the purpose of this package,
+is only to expose the endpoints of a Restful service, and express is built more for web rendering using JavaScript in the backend.
+
 ### Run the Proyect
 - start mongo
 - `npm install` to install the dependencies
-- `nodemon client.js` to run the code 
+- `nodemon client.js` to run the code
