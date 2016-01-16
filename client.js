@@ -59,3 +59,13 @@ client.del('/product/' + testProduct.id, (err, req, res, status) => {
       console.log(status);
   }
 });
+// call for fetching one product
+client.get('/product/' + testProduct.id, function (err, req, res, product) {
+    if (err) {
+        console.log("An error ocurred >>>>>>");
+        console.log(err);
+    } else {
+        console.log('Product with id ' + product.id + '  >>>>>>>');
+        console.log(product);
+    }
+});

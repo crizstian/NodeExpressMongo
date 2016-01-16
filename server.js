@@ -69,5 +69,11 @@ server.del('/product/:id', (req, res, next) => {
   return next();
 });
 
-//db.close();
+server.get('/product/:id', (req, res, next) => {
+  db.products.findOne({ id: req.params.id }, (err, data) => {
+      res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify(data));
+  });
+  return next();
+});
 module.exports = server;
